@@ -44,7 +44,7 @@ async function main() {
   await mongoose.connect(process.env.DB_URL);
 
   app.get("/", (req, res) => {
-    res.send("This is Smart Clothing Server");
+    res.send("This is LYT Global Clothing Server");
   });
 }
 
@@ -55,5 +55,5 @@ async function main() {
 // });
 
 app.listen(port, () => {
-  console.log(`Smart-Clothing is listening on port ${port}`);
+  console.log(`LYT Global is listening on port ${port}`);
 });
