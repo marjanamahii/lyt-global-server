@@ -9,13 +9,13 @@ const bodyParser = require("body-parser");
 
 //middleware
 app.use(express.json({ limit: "25mb" }));
-// app.use(express.urlencoded({ limit: "25mb" }));
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://lyt-global-client.vercel.app",
+    // origin: "http://localhost:5173",
     credentials: true,
   })
 );
